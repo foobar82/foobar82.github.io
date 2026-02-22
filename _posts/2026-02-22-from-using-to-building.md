@@ -26,7 +26,7 @@ I also need ground rules and safety rails. What does the tool do? What does it n
 
 I'm not the only one thinking about this. [Stripe recently published a blog post](https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2) on how they orchestrate their AI agents (minions) using a pattern they call 'blueprints' — workflows that mix deterministic steps (run the linter, push the code) with agentic steps (implement the task, fix failures). The principle is: use an LLM only where you need judgement, and use plain code everywhere else. My architecture follows the same instinct, and it's reassuring to see it validated at production scale. The difference is that Stripe's agents work on tasks chosen by humans, whereas mine will choose their own.
 
-Over the next weeks, I'm going to build this. The tool itself — the starting point — isn't the core purpose of what I'm building. It's the showcase for what I'm building. It's a self-evolving system, and that made me start thinking of ecosystems. The humour here — simulating evolution, by evolving — tickled me.
+Over the next weeks, I'm going to build this. The tool itself — the starting point — isn't the core purpose of what I'm building. It's the showcase for what I'm building. It's a self-evolving system, and that made me start thinking of ecosystems. I liked the self-reference: evolving a system to simulate evolution.
 
 I'm calling it The Lost World Plateau. It'll start very basic: a bounded ecosystem with plants, herbivores, and a predator. It'll evolve over time, as the software evolves following user feedback.
 
