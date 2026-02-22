@@ -1,3 +1,9 @@
+---
+layout: post
+title: "From Using To Building"
+date: 2026-02-22
+---
+
 I have, so far, been _using_ AI.
 
 One of the things that's been a revelation to me is not how much *easier* it is to write software, but how much *more fun* it has become. I can start with a concept, spin something up very quickly to explore, and iterate. I can think deeply in order to build a robust system, with tests and documentation.
