@@ -1,3 +1,4 @@
-theme: jekyll-theme-minimal
 title: Henry Lockwood's homepage
 description: Engineering experiments, built from scratch and written up honestly.
+theme: minima
+```
