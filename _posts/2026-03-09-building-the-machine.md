@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Building the Machine That Builds the Machine"
+date: 2026-03-09
+---
+
 # Building the Machine That Builds the Machine
 
 Last time, I left you with a barely-functional ecosystem simulator and a promise: the bugs and rough edges would be the agents' first job, not mine.

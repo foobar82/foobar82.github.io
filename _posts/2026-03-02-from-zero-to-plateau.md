@@ -1,3 +1,9 @@
+---
+layout: post
+title: "From Zero to Plateau"
+date: 2026-03-02
+---
+
 # From Zero to Plateau: Building v0 of The Lost World
 
 Last week I laid out the concept: a self-evolving ecosystem simulator, built and maintained by AI agents. This week, I rolled up my sleeves and built the first version.
