@@ -60,7 +60,7 @@ Better to learn fast than to launch polished.
 
 ## What's Next
 
-The app is live! [LINK]
+The app is live! https://lostworld.from-scratch.xyz/
 
 Submit a request. See what happens. The agents run a daily batch, so check back tomorrow to see if your suggestion made it onto the plateau.
 
