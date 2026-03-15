@@ -6,6 +6,7 @@ date: 2026-03-16
 # Turning It On
 
 Last week I built the machine. This week I turned it on.
+
 ![I wish I had a lever like this for it.](/assets/Turn-It-On.jpg)
 
 The first question was whether the local pipeline — filtering, embedding, clustering, prioritising — could produce output good enough for the writer agent to work with. I tuned each stage until it was *good enough*, not great. If the writer can understand the task summary, the upstream stages have done their job. I wanted to perfect it; that would have been perfectionism, not value.
