@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Turning It On"
-date: 2026-03-16
+date: 2026-03-15
 ---
 # Turning It On
 
