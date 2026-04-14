@@ -86,7 +86,7 @@ Reasoning:
 
 ---
 
-I like this. The feedback is human in tone (module some dashes - oh Claude!). It's helpful that it specifies what the user observes as a problem ("nothing ever happens near the water"), *and* a potential improvement. The reasoning is helpful too; more results coming next week as I experiment with my prompts and harnesses.
+I like this. The feedback is human in tone (modulo some dashes - oh Claude!). It's helpful that it specifies what the user observes as a problem ("nothing ever happens near the water"), *and* a potential improvement. The reasoning is helpful too; more results coming next week as I experiment with my prompts and harnesses.
 
 ---
 
