@@ -77,9 +77,9 @@ Adding a new persona is a single dict entry — no other code changes needed. Fu
 ---
 
 Submitted (3):
-  • the little animals keep running around but they don't seem to be doing anything interesting - would love to see them actually interact with each other more
-  • sometimes everything just disappears and then suddenly pops back - feels jarring when the whole world resets like that
-  • the water looks pretty but nothing ever happens near it - what if some creatures needed to drink or lived in it?
+* the little animals keep running around but they don't seem to be doing anything interesting - would love to see them actually interact with each other more
+* sometimes everything just disappears and then suddenly pops back - feels jarring when the whole world resets like that
+* the water looks pretty but nothing ever happens near it - what if some creatures needed to drink or lived in it?
 
 Reasoning:
   I considered what would catch a visually-oriented, non-technical user's attention. They'd notice the movement patterns seem random rather than purposeful, which breaks immersion. The respawn mechanic when species go extinct would feel abrupt and artificial to someone expecting natural flow. The water feature is visually prominent but completely non-functional, which would make a curious user wonder about missed possibilities. These are all 'what if' observations about making the world feel more alive, matching the persona's tendency to imagine improvements rather than specify technical solutions.
