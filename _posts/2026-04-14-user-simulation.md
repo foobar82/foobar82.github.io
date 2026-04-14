@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "User testing without users?"
-date: 2026-06-12
+date: 2026-04-14
 ---
 
 
@@ -21,9 +21,9 @@ This solves my immediate cold-start problem (and please, drop some feedback requ
 
 ---
 
-**How the agent thinks about itself**
+## How the agent thinks about itself
 
-One design decision Claude is pleased with, and I'm looking forward to A/B testing: the agent doesn't pretend to be human. Instead of putting it in character and hoping it doesn't confuse its own perspective with a person's, the prompt frames it explicitly:
+One design decision I'm looking forward to A/B testing: the agent doesn't pretend to be human. Instead of putting it in character and hoping it doesn't confuse its own perspective with a person's, the prompt frames it explicitly:
 
 > "I am an agent and I believe a user would notice X, causing them to do Z, given they have characteristics Y."
 
@@ -36,11 +36,11 @@ Variant prompt to test next time:
 
 ---
 
-**The empathy gap**
+## The empathy gap
 
 Agents aren't human. They have no lived experience, no true memory, and no human emotion (despite the interesting papers on emotion vectors!). Therefore, my user emulation agent has the strengths and weaknesses of an LLM: it pattern-matches on what has ever been *articulated and written*. Everything ever written about what people find confusing or delightful. Its systematic blind spot is **silent abandonment**: the user who closes the tab without saying why. That behaviour is invisible to the training corpus, and therefore to the agent. 
 
-Digression: this "negative space" principle is hugely important in graphic design, garden design, and visual communication. We don't often talk (or write) about what's not there: is this something that needs to be addressed in order for GenAI to tackle tasks in these arenas?
+*Digression: this "negative space" principle is hugely important in graphic design, garden design, and visual communication. We don't often talk (or write) about what's not there: is this something that needs to be addressed in order for GenAI to tackle tasks in these arenas?*
 
 My mitigation: the prompt explicitly asks the agent to reason about what *would* cause disengagement, not only what would prompt an explicit request. This doesn't solve the problem (it can't) but it at least keeps the question in view.
 
@@ -48,7 +48,7 @@ There's a secondary quirk too. The emulator generates more precise, articulate p
 
 ---
 
-**What the simulator sees**
+## What the simulator sees
 
 The agent is deliberately constrained to what a real user could observe:
 
@@ -62,7 +62,7 @@ Importantly, it doesn't yet look at the system running. It doesn't consider what
 
 ---
 
-**Persona harness**
+## Persona harness
 
 Each simulated user type is a `Persona` dataclass with a name, a plain-English description (injected verbatim into the prompt), a technical level, and an engagement style. The v0 default is `curious_explorer`:
 
@@ -72,19 +72,25 @@ Adding a new persona is a single dict entry — no other code changes needed. Fu
 
 ---
 
-**What it actually produces**
-
-*[Placeholder: paste one real example here — the raw feedback text the simulator submitted, followed by the corresponding reasoning trace snippet from the JSON. Ideally one where the deduplication fired and skipped something, if you have it — that's the most interesting case to show.]*
+## What it actually produces
 
 ---
 
-**Did it work?**
+Submitted (3):
+  • the little animals keep running around but they don't seem to be doing anything interesting - would love to see them actually interact with each other more
+  • sometimes everything just disappears and then suddenly pops back - feels jarring when the whole world resets like that
+  • the water looks pretty but nothing ever happens near it - what if some creatures needed to drink or lived in it?
 
-*[Placeholder: a short honest paragraph on early results. Did the generated feedback feel plausible? Did anything it produced actually make it through the pipeline and change the ecosystem? "Too early to tell" is a perfectly valid answer — just say what you observed.]*
+Reasoning:
+  I considered what would catch a visually-oriented, non-technical user's attention. They'd notice the movement patterns seem random rather than purposeful, which breaks immersion. The respawn mechanic when species go extinct would feel abrupt and artificial to someone expecting natural flow. The water feature is visually prominent but completely non-functional, which would make a curious user wonder about missed possibilities. These are all 'what if' observations about making the world feel more alive, matching the persona's tendency to imagine improvements rather than specify technical solutions.
 
 ---
 
-**The limit cycle risk**
+I like this. The feedback is human in tone (module some dashes - oh Claude!). It's helpful that it specifies what the user observes as a problem ("nothing ever happens near the water"), *and* a potential improvement. The reasoning is helpful too; more results coming next week as I experiment with my prompts and harnesses.
+
+---
+
+## The limit cycle risk
 
 This is the part I'm most cautious about in the long run.
 
@@ -100,7 +106,7 @@ The longer-term fix is something I was already planning for other reasons: a **n
 
 ---
 
-**Two outputs**
+## Two outputs
 
 Every run produces two things:
 
@@ -109,7 +115,7 @@ Every run produces two things:
 
 ---
 
-**What's next**
+## What's next
 
 The obvious follow-on is stateful simulation: a persona that remembers what it asked for in previous runs and notices whether it was fulfilled. That needs the naturalist's log as its memory primitive, so it's wired to the same roadmap item.
 
